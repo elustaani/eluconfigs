@@ -1,0 +1,55 @@
+// Main Default Fastfetch Config
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "color": {"1": "white", "2": "blue"}
+    },
+    "display": {
+        "separator": ":   ",
+        "color": {
+            "separator": "blue",
+	    "title": "blue"
+        }
+    },
+    "modules": [
+	"break",
+	{
+		"keycolor": "blue",
+		"type":	"title"
+	},
+	"break",
+	{
+		"key": 	"GNU/Linux",
+		"keycolor": "blue",
+		"type": "os"
+	},
+	{	"key": 	"OS Kernel",
+		"keycolor": "blue",
+		"type": "kernel"
+	},
+	{	"key":	"Actively ",
+		"keycolor": "blue",
+		"type": "uptime"
+	},	
+	{	"key": "FIN Time ",
+		"keycolor": "blue",
+		"type": "datetime",
+		"format": "{day-in-month}/{month-pretty}/{year} {hour-pretty}:{minute-pretty}:{second-pretty}"
+	},
+	{
+		"key":	"Terminal ",
+		"keycolor": "blue",
+		"type": "terminal"
+	},
+	{	"key":	"CLI Shell",
+		"keycolor": "blue",
+		"type": "shell"
+	},
+	{	"key":	"PGKS List",
+		"keycolor": "blue",
+		"type": "packages"
+	},	
+        "break"
+    ]
+}
